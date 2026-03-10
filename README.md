@@ -4,8 +4,8 @@ This utility decrypts all PDFs in a folder (using a shared password) and saves n
 
 ### What it does
 
-- **Input folder**: `/Users/himanshubansal7/Downloads/password_protected_pdfs`
-- **Output folder**: `/Users/himanshubansal7/Downloads/unlocked_pdfs`
+- **Input folder**: directory containing password-protected PDFs
+- **Output folder**: directory where unlocked PDFs will be written
 - **Output naming**: adds `_nopw` to the filename (example: `file.pdf` → `file_nopw.pdf`)
 
 ### Prerequisites
@@ -39,22 +39,7 @@ python script/remove_pdf_passwords.py <INPUT_DIR> -o <OUTPUT_DIR>
 - **`<INPUT_DIR>`**: folder containing the password-protected PDFs  
 - **`<OUTPUT_DIR>`**: folder where unlocked PDFs will be written
 
-Example with your current folders:
-
-```bash
-cd /Users/himanshubansal7/CursorDev
-source venv/bin/activate
-python script/remove_pdf_passwords.py /Users/himanshubansal7/Downloads/password_protected_pdfs \
-  -o /Users/himanshubansal7/Downloads/unlocked_pdfs
-```
-
 When prompted, enter the **shared PDF password** (it won’t echo).
-
-### Output
-
-Unlocked PDFs will be written to:
-
-- `/Users/himanshubansal7/Downloads/unlocked_pdfs`
 
 ### Notes / troubleshooting
 
