@@ -59,3 +59,4 @@ def parse_args() -> argparse.Namespace:
 if __name__ == "__main__":
     args = parse_args()
     remove_passwords(input_dir=args.input_dir, output_dir=args.output_dir)
+

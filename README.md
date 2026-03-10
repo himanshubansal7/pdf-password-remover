@@ -28,10 +28,23 @@ pip install pypdf "cryptography>=3.1"
 
 ### Run
 
+General form:
+
 ```bash
 cd /Users/himanshubansal7/CursorDev
 source venv/bin/activate
-python remove_pdf_passwords.py /Users/himanshubansal7/Downloads/password_protected_pdfs \
+python script/remove_pdf_passwords.py <INPUT_DIR> -o <OUTPUT_DIR>
+```
+
+- **`<INPUT_DIR>`**: folder containing the password-protected PDFs  
+- **`<OUTPUT_DIR>`**: folder where unlocked PDFs will be written
+
+Example with your current folders:
+
+```bash
+cd /Users/himanshubansal7/CursorDev
+source venv/bin/activate
+python script/remove_pdf_passwords.py /Users/himanshubansal7/Downloads/password_protected_pdfs \
   -o /Users/himanshubansal7/Downloads/unlocked_pdfs
 ```
 
