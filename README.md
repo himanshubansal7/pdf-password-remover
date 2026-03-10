@@ -17,7 +17,7 @@ This utility decrypts all PDFs in a folder (using a shared password) and saves n
 From Terminal:
 
 ```bash
-cd /Users/himanshubansal7/CursorDev
+cd <USER_HOME>/<Repo_Dir>
 
 python3 -m venv venv
 source venv/bin/activate
@@ -31,7 +31,7 @@ pip install pypdf "cryptography>=3.1"
 General form:
 
 ```bash
-cd /Users/himanshubansal7/CursorDev
+cd <USER_HOME>/<Repo_Dir>
 source venv/bin/activate
 python script/remove_pdf_passwords.py <INPUT_DIR> -o <OUTPUT_DIR>
 ```
